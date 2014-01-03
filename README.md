@@ -1,11 +1,5 @@
-# CodeMirror
-[![Build Status](https://secure.travis-ci.org/marijnh/CodeMirror.png?branch=master)](http://travis-ci.org/marijnh/CodeMirror)
-[![NPM version](https://badge.fury.io/js/codemirror.png)](http://badge.fury.io/js/codemirror)
+# CodeMirror 搭建在线编码工具
 
-CodeMirror is a JavaScript component that provides a code editor in
-the browser. When a mode is available for the language you are coding
-in, it will color your code, and optionally help with indentation.
+CodeMirror 是一个JavaScript实现的代码编辑器。利用CodeMirror搭建了一个简单的在线编辑软件。
 
-The project page is http://codemirror.net  
-The manual is at http://codemirror.net/doc/manual.html  
-The contributing guidelines are in [CONTRIBUTING.md](https://github.com/marijnh/CodeMirror/blob/master/CONTRIBUTING.md)
+在线编码地址：[http://yhzhtk.github.io/CodeMirror/](http://yhzhtk.github.io/CodeMirror/)
