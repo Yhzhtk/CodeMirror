@@ -1,0 +1,33 @@
+<!doctype html>
+
+<title>CodeMirror: HTML completion demo</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="/doc/docs.css">
+<link rel=stylesheet href="/theme/solarized.css">
+
+<link rel="stylesheet" href="/lib/codemirror.css">
+<link rel="stylesheet" href="/addon/hint/show-hint.css">
+<script src="/lib/codemirror.js"></script>
+<script src="/addon/hint/show-hint.js"></script>
+<script src="/addon/hint/xml-hint.js"></script>
+<script src="/addon/hint/html-hint.js"></script>
+<script src="/mode/xml/xml.js"></script>
+<script src="/mode/javascript/javascript.js"></script>
+<script src="/mode/css/css.js"></script>
+<script src="/mode/htmlmixed/htmlmixed.js"></script>
+
+<div id="code"></div>
+    <script type="text/javascript">
+      CodeMirror.commands.autocomplete = function(cm) {
+          CodeMirror.showHint(cm, CodeMirror.hint.html);
+      }
+      window.onload = function() {
+        editor = CodeMirror(document.getElementById("code"), {
+          lineNumbers: true,
+          mode: "text/html",
+          theme: "solarized",
+          extraKeys: {"Alt-/": "autocomplete"},
+          value: "<!doctype html>\n<html>\n  " + document.documentElement.innerHTML + "\n</html>"
+        });
+      };
+    </script>
